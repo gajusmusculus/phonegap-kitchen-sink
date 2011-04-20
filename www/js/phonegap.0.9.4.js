@@ -1,6 +1,6 @@
 (function() {
 
-    window.navigator.prototype = {
+    window.navigator = {
         accelerometer: {
             clearWatch: function(watchId) {
                 clearTimeout(watchId);
@@ -27,6 +27,12 @@
             },
             DestinationType: {
                 FILE_URI: 0
+            }
+        },
+
+        network: {
+            isReachable: function(domain, callback) {
+                callback(1);
             }
         },
 
@@ -70,5 +76,12 @@
     };
 
     window.ContactFindOptions = function() {};
+
+    window.NetworkStatus = {
+        NOT_REACHABLE: 0,
+        REACHABLE_VIA_CARRIER_DATA_NETWORK: 1,
+        REACHABLE_VIA_WIFI_NETWORK: 2
+    };
+    
 
 })();
