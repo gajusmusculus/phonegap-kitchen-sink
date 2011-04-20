@@ -1,6 +1,6 @@
 (function() {
 
-    window.navigator = {
+    window.navigator.prototype = {
         accelerometer: {
             clearWatch: function(watchId) {
                 clearTimeout(watchId);
