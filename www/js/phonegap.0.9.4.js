@@ -28,7 +28,22 @@
             DestinationType: {
                 FILE_URI: 0
             }
+        },
+
+        service: {
+            contacts: {
+                find: function(filter, onSuccess, onFail, options) {
+                    onSuccess([
+                        { displayName: 'Michael Brooks' },
+                        { displayName: 'Fil Maj' },
+                        { displayName: 'Brett Rudd' },
+                        { displayName: 'Andrew Lunny' }
+                    ]);
+                }
+            }
         }
     };
+
+    window.ContactFindOptions = function() {};
 
 })();
