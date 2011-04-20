@@ -30,6 +30,23 @@
             }
         },
 
+        notification: {
+            alert: function(message, onSuccess) {
+                alert(message);
+                onSuccess();
+            },
+            beep: function(times) {
+                console.log('Beep x' + times);
+            },
+            confirm: function(message, onSuccess) {
+                alert(message);
+                onSuccess(0);
+            },
+            vibrate: function(ms) {
+                console.log('vvvviiiibbbrrate for ' + ms + 'ms');
+            }
+        },
+
         service: {
             contacts: {
                 find: function(filter, onSuccess, onFail, options) {
