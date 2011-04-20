@@ -16,6 +16,18 @@
 
                 return watchId;
             }
+        },
+
+        camera: {
+            getPicture: function(onSuccess, onFail, options) {
+                onSuccess('hello/world/image.png');
+            },
+            PictureSourceType: {
+                PHOTOLIBRARY: 0
+            },
+            DestinationType: {
+                FILE_URI: 0
+            }
         }
     };
 

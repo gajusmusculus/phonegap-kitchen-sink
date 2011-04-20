@@ -16,17 +16,14 @@
         };
 
         var options = {
-            frequency: 300
+            frequency: 250
         };
 
         watchId = navigator.accelerometer.watchAcceleration(onSuccess, onFail, options);
-        console.log('accelerometer show');
     });
 
     $('#accelerometer').bind('pagehide', function() {
         navigator.accelerometer.clearWatch(watchId);
-
-        console.log('accelerometer hide');
     });
 
 })();
