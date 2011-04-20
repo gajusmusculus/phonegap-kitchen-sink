@@ -44,6 +44,14 @@
         }
     };
 
+    window.device = {
+        name: 'iPhone',
+        uuid: 'adssfd888',
+        platform: 'iOS 4.3',
+        version: '4.3',
+        phonegap: '0.9.4'
+    };
+
     window.ContactFindOptions = function() {};
 
 })();
