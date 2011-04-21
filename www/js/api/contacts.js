@@ -4,6 +4,9 @@
         // Insert the contacts into the list
         //
         var onSuccess = function(contacts) {
+            // For demo purposes, only load 10
+            contacts = contacts.slice(0, 10);
+            
             // Helper function to find contacts last name
             var lastName = function(name) {
                 name = name.split(' ');
