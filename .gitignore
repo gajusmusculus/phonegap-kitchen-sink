@@ -6,3 +6,5 @@ tmp/**/*
 
 target/android/assets
 target/android/bin
+target/ios/KitchenSink/www
+target/ios/KitchenSink/build

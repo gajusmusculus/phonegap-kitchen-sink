@@ -15,7 +15,7 @@ android:
 	mkdir -p ${ANDROID}/assets
 	rm -rf ${ANDROID_WWW}
 	cp -R ./www ${ANDROID_WWW}
-	cp ./lib/phonegap/android/phonegap.0.9.4.js ${ANDROID_WWW}/js/phonegap.0.9.4.js
+	cp ./lib/phonegap/android/phonegap.0.9.4.js ${ANDROID_WWW}/phonegap.0.9.4.js
 	ant -f ${ANDROID}/build.xml debug install
 
 # # # # # # # # # # # # #
@@ -28,7 +28,7 @@ IOS_WWW = ${IOS}/www
 ios:
 	rm -Rf ${IOS_WWW}
 	cp -R ./www ${IOS_WWW}
-	cp ./lib/phonegap/ios/phonegap.0.9.4.js ${IOS_WWW}/js/phonegap.0.9.4.js
+	cp ./lib/phonegap/ios/phonegap.0.9.4.js ${IOS_WWW}/phonegap.0.9.4.js
 	open ${IOS}/KitchenSink.xcodeproj
 
 .PHONY: help
