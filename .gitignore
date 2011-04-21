@@ -3,3 +3,6 @@ tmp/**/*
 
 # OS X
 .DS_Store
+
+target/android/assets
+target/android/bin
